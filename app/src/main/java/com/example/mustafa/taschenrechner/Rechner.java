@@ -33,7 +33,7 @@ public class Rechner extends AppCompatActivity {
         ergebnis = (TextView) findViewById(R.id.Ergebnis);
 
         float d1 = Float.parseFloat(diviZahl1.getText().toString());
-        float d2 = Float.parseFloat(diviZahl1.getText().toString());
+        float d2 = Float.parseFloat(diviZahl2.getText().toString());
 
 
         float erg = d1/d2;
