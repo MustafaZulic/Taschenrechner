@@ -11,10 +11,10 @@
         android:id="@+id/Dividend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignBottom="@+id/dividend"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText2"
-        android:layout_toStartOf="@+id/editText2"
+        android:layout_alignTop="@+id/dividend"
+        android:layout_toStartOf="@+id/dividend"
         android:gravity="center_vertical"
         android:text="Dividend"
         android:textSize="24sp" />
@@ -24,17 +24,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rechnen"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignBottom="@+id/divisor"
+        android:layout_alignLeft="@+id/divisor"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText1"
-        android:layout_toStartOf="@+id/editText1"
+        android:layout_alignTop="@+id/divisor"
+        android:layout_toStartOf="@+id/divisor"
         android:gravity="center_vertical"
         android:text="Divisor"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/dividend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/Divisor"
@@ -45,7 +45,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/divisor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rechnen"
@@ -62,7 +62,8 @@
         android:layout_centerVertical="true"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:text="Dividieren" />
+        android:text="Dividieren"
+        android:onClick="Berechne"/>
 
     <TextView
         android:id="@+id/textView2"
