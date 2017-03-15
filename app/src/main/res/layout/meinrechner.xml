@@ -2,58 +2,66 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentRight="false"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
-
+    android:paddingRight="16dp">
 
 
     <TextView
         android:id="@+id/Dividend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dividend"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/editText2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="56dp" />
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toStartOf="@+id/editText2"
+        android:gravity="center_vertical"
+        android:text="Dividend"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/Divisor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/rechnen"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toStartOf="@+id/editText1"
+        android:gravity="center_vertical"
         android:text="Divisor"
-        android:textSize="24sp"
-        android:layout_marginTop="18dp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentStart="true" />
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/Divisor"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/rechnen"
+        android:layout_marginBottom="20dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_alignTop="@+id/Dividend"
-        android:layout_alignStart="@+id/editText1" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/rechnen"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/rechnen"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_marginEnd="13dp"
-        android:layout_alignBaseline="@+id/Divisor"
-        android:layout_alignBottom="@+id/Divisor"
-        android:layout_alignParentEnd="true" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/rechnen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Divisor"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
         android:text="Dividieren" />
 
     <TextView
@@ -61,7 +69,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/rechnen"
+        android:layout_toStartOf="@+id/rechnen"
         android:text="Ergebnis:"
         android:textSize="24sp" />
 
@@ -69,8 +78,11 @@
         android:id="@+id/Ergebnis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignStart="@+id/editText1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/rechnen"
+        android:layout_below="@+id/rechnen"
+        android:text="000000"
         android:textSize="24sp" />
 
 
